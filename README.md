@@ -24,7 +24,9 @@ Supported File Types:
 Currently only c, python, and bash files are supported.
 
 $mkexe <FILENAME> c
+
 $mkexe <FILENAME> bash
+
 $mkexe <FILENAME> python
   
 ## exercise  *
