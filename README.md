@@ -1,8 +1,11 @@
 # Nima's Scripts
 
-Here are scripts that I've made to make my life easier. 
+Here are scripts that I've made to make my life easier. Maybe they'll make yours too...
+
 NOTE! 
+
 Some of these scripts won't work unless you are on CSL.
+
 These are marked with *
 
 ## Installation
