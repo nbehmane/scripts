@@ -3,6 +3,7 @@
 Here are scripts that I've made to make my life easier. 
 NOTE! 
 Some of these scripts won't work unless you are on CSL.
+These are marked with *
 
 ## Installation
 
@@ -26,7 +27,7 @@ $mkexe <FILENAME> c
 $mkexe <FILENAME> bash
 $mkexe <FILENAME> python
   
-## exercise
+## exercise  *
 
 Will create an Exercise folder containing the requirements, the Makefile, and a
 template main.c
@@ -36,5 +37,16 @@ $exercise <EXERCISE NUMBER>
 
 Example)
 $exercise 1
+
+## styleCheck  *
+
+Will iterate through a given set of files, and checks them one by one.
+
+Usage:
+$styleCheck <FILE1> <FILE2> <FIL3> ...
+ 
+Example)
+
+$styleCheck main.c otherfile.c anotherfile.c yougetthepoint.c
 
 ## License
