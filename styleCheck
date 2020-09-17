@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+read -p 'File to check: ' file
+~kmammen-grader/bin/styleCheckC $file

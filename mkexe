@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+echo "File Name: $1"
+echo "Language: $2"
+
+touch $1
+chmod +x ./$1
+
+if [[ $2 = "bash" ]] 
+then
+   echo "#!/usr/bin/env bash" > ./$1
+elif [[ $2 = "python" ]] 
+then
+   echo "#!/usr/bin/env python" > ./$1
+elif [[ $2 = "c" ]]
+then
+   echo "#include <stdio.h>" > ./$1
+else
+   echo "No language input...\n"
+   echo "Removing file...\n"
+   rm ./$1
+fi
