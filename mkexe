@@ -1,11 +1,22 @@
 #!/usr/bin/env bash
 
+# Check if any arguments were given.
+if [[ "$#" -lt 1 ]]
+then
+   echo "Not enough arguments..."
+   # Exit gracefully...
+   exit 2
+fi
+
+# Report the info
 echo "File Name: $1"
 echo "Language: $2"
 
+# Create the file and make it executable
 touch $1
 chmod +x ./$1
 
+# Check the language
 if [[ $2 = "bash" ]] 
 then
    echo "#!/usr/bin/env bash" > ./$1
@@ -16,7 +27,7 @@ elif [[ $2 = "c" ]]
 then
    echo "#include <stdio.h>" > ./$1
 else
-   echo "No language input...\n"
-   echo "Removing file...\n"
+   echo "No language input..."
+   echo "Removing file..."
    rm ./$1
 fi
