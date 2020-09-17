@@ -1,5 +1,13 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-
-read -p 'File to check: ' file
+if [[ "$#" -lt 1  ]]
+then
+   echo "No files specified..."
+   echo "Exiting..."
+   exit 2
+fi
+echo "$# Files"
+for file in "$@"
+do
 ~kmammen-grader/bin/styleCheckC $file
+done
