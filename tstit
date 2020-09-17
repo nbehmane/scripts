@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
-for testInput in *.in; do
-   name=${testInput%.in}
-   printf "$name\n"
-   a.out < $testInput > $name.actual
-   diff -q $name.actual $name.expect
-done
+if [ $1 = "-R" ]
+then
+   for testInput in *.in; do
+      name=${testInput%.in}
+      printf "$name\n"
+      a.out < $testInput 1> $name.actual 2>$name.err
+      echo "Exit status/return code: " $? 
+      diff -q $name.actual $name.expect
+   done
+fi
