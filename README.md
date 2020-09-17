@@ -14,7 +14,7 @@ Clone the repo, and add the directory to your PATH.
 mkexe creates an executable file, with a specified language.
 
 Usage:
-$mkexe <FILENAME> <LANGUAGE>
+$mkexe FILENAME LANGUAGE
 
 Example) 
 $mkexe some_bash_script bash
@@ -23,11 +23,11 @@ $mkexe some_bash_script bash
 Supported File Types:
 Currently only c, python, and bash files are supported.
 
-$mkexe <FILENAME> c
+$mkexe FILENAME c
 
-$mkexe <FILENAME> bash
+$mkexe FILENAME bash
 
-$mkexe <FILENAME> python
+$mkexe FILENAME python
   
 ## exercise  *
 
@@ -35,7 +35,7 @@ Will create an Exercise folder containing the requirements, the Makefile, and a
 template main.c
 
 Usage:
-$exercise <EXERCISE NUMBER>
+$exercise EXERCISE NUMBER
 
 Example)
 $exercise 1
@@ -45,7 +45,7 @@ $exercise 1
 Will iterate through a given set of files, and checks them one by one.
 
 Usage:
-$styleCheck <FILE1> <FILE2> <FIL3> ...
+$styleCheck FILE1 FILE2 FIL3 ...
  
 Example)
 
