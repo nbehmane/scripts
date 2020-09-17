@@ -52,4 +52,4 @@ Example)
 $styleCheck main.c otherfile.c anotherfile.c yougetthepoint.c
 
 ## License
-gpl-3.0
+[GNU v3.0][https://www.gnu.org/licenses/gpl-3.0.en.html]
