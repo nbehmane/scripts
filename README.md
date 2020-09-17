@@ -52,3 +52,4 @@ Example)
 $styleCheck main.c otherfile.c anotherfile.c yougetthepoint.c
 
 ## License
+gpl-3.0
